@@ -89,6 +89,31 @@ end
 #========================================================================
 # Actions
 
+When /^I go to the ((?!page).*) page$/ do |path|
+  path = "#{path.downcase.gsub(/\s/, '_')}_path".to_sym
+  begin 
+    visit send(path)
+  rescue 
+    puts "#{path} could not be found!"
+  end
+end
+
+When /^I go to the ((?!page).*) page for (.*)$/ do |path, id|
+  id = case id
+    when "the first product"
+      @product ||= Spree::Product.last
+    when 'option type "Size"'
+      @option_type = Spree::OptionType.find_by_presentation("Size")
+    else id
+  end
+  path = "#{path.downcase.gsub(/\s/, '_')}_path".to_sym
+  begin 
+    visit send(path, id)
+  rescue 
+    puts "#{path}(#{id.to_param}) could not be found!"
+  end
+end
+
 When /^(?:|I )press "([^"]*)"$/ do |button|
   # wtf button text spree!
   button = "#popup_ok" if button == "OK"
