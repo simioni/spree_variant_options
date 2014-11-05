@@ -9,3 +9,5 @@ test/dummy
 capybara-*.html
 .rvmrc
 .project
+.ruby-gemset
+.ruby-version
