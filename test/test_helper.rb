@@ -39,5 +39,3 @@ class Test::Unit::TestCase
   require 'ffaker'
   require 'spree/testing_support/factories'
 end
-
-SpreeVariantOptions::VariantConfig.default_instock = false
