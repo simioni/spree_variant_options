@@ -4,6 +4,16 @@
 Spree Variant Options is a very simple spree extension that replaces the radio-button variant selection with groups of option types and values. To get a better idea let's let a few images do the explaining.
 
 
+#### Spree 2.0.x
+This gem has been updated to Spree 2.0.x. To use it, checkout the branch 2-0-stable.
+
+```ruby
+gem 'spree_variant_options', github: 'simioni/spree_variant_options', branch: '2-0-stable'
+```
+
+The master branch represents work being done to port this project to rails 4.
+
+
 #### When no selection has been made:
 ![Spree Variant Options - No selection](http://spree-docs.s3.amazonaws.com/spree_variant_options/v0.3.1/1.jpg)
 
