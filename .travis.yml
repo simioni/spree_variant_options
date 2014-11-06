@@ -11,6 +11,6 @@ rvm:
 
 before_script:
   - "sh -e /etc/init.d/xvfb start"
-  - "bundle exec test_app"
+  - "bundle exec rake test_app"
 
 script: "DISPLAY=:99.0 bundle exec rake"
