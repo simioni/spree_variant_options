@@ -32,7 +32,7 @@ class ActionDispatch::IntegrationTest
   end
 end
 
-class Test::Unit::TestCase
+class MiniTest::Unit::TestCase
   # make Factory Girl syntax available without FactoryGirl.
   include FactoryGirl::Syntax::Methods
   # make spree factories available
