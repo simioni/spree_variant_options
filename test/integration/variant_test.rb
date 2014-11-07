@@ -153,8 +153,8 @@ class ProductTest < ActionDispatch::IntegrationTest
       @s = create(:option_value, :presentation => "S", :option_type => @size)
       @red = create(:option_value, :name => "Color", :presentation => "Red", :option_type => @color)
       @green = create(:option_value, :name => "Color", :presentation => "Green", :option_type => @color)
-      @variant1 = @product.variants.create({:option_values => [@s, @red], :price => 10, :cost_price => 5}, :without_protection => true)
-      @variant2 = @product.variants.create({:option_values => [@s, @green], :price => 10, :cost_price => 5}, :without_protection => true)
+      @variant1 = @product.variants.create({:option_values => [@s, @red], :price => 10, :cost_price => 5})
+      @variant2 = @product.variants.create({:option_values => [@s, @green], :price => 10, :cost_price => 5})
     end
 
     should "choose variant with track_inventory_levels to false" do
