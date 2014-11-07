@@ -66,7 +66,7 @@ class Spree::OptionValueTest < ActiveSupport::TestCase
 
     should "retain option values sort order" do
       @unordered, @prev_position = false, 0
-      Spree::OptionValue.for_product(@product).all.each do |ov|
+      Spree::OptionValue.for_product(@product).each do |ov|
         @unordered = true if @prev_position > ov.position
         @prev_position = ov.position
       end

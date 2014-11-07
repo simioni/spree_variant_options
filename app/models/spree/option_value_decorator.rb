@@ -2,7 +2,7 @@ Spree::OptionValue.class_eval do
 
   # attr_accessible :image
 
-  default_scope order("#{quoted_table_name}.position")
+  default_scope { order("#{quoted_table_name}.position") }
 
   has_attached_file :image,
     :styles        => { :small => '40x30#', :large => '140x110#' },
