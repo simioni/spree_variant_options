@@ -1,8 +1,8 @@
-#### Spree 2.0.x through 2.1.x
+#### Spree 2.0.x through 2.2.x
 This gem has been updated to Spree 2. To use it, checkout the correct branch for your spree version.
 
 ```ruby
-gem 'spree_variant_options', github: 'simioni/spree_variant_options', branch: '2-1-stable'
+gem 'spree_variant_options', github: 'simioni/spree_variant_options', branch: '2-2-stable'
 ```
 
 # Spree Variant Options [![Build Status](https://travis-ci.org/simioni/spree_variant_options.svg?branch=master)](https://travis-ci.org/simioni/spree_variant_options)
@@ -151,6 +151,7 @@ Contributors
 * Richard Brown ([@rbrown](https://github.com/rbrown))
 * [@baracek](https://github.com/baracek)
 * [@Numerico](https://github.com/Numerico)
+* Ricardo Simioni ([@simioni](https://github.com/simioni))
 
 If you'd like to help out feel free to fork and send me pull requests!
 
