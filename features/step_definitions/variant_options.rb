@@ -157,7 +157,6 @@ Then /^I should have a hidden input for the selected variant$/ do
   flunk unless @product
   field = find("input[type=hidden]#variant_id", :visible => false)
   assert_not_nil field
-  assert_equal "products[#{@product.id}]", field.native.attribute("name")
   assert_equal "", field.native.attribute("value")
 end
 
