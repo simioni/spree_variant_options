@@ -1,6 +1,6 @@
 module Spree
   module Admin
-    class OptionValuesController < BaseController
+    OptionValuesController.class_eval do
   
       def update_positions
         params[:positions].each do |id, index|
